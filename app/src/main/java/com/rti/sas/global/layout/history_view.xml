@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".view.HistoryView">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ToolBar"
+        android:weightSum="1">
+        <TextView
+            style="@style/Title"
+            android:id="@+id/title"
+            android:text="@string/app_name"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        style="@style/Content"
+        android:orientation="vertical"
+        android:padding="@dimen/marginbig"
+        android:background="@color/colorWhite">
+
+        <ListView
+            style="@style/Content"
+            android:id="@+id/list">
+
+        </ListView>
+
+        <TextView
+            style="@style/Text"
+            android:id="@+id/mencard"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/newcard"/>
+        <ImageView
+            style="@style/Text"
+            android:id="@+id/addcard"
+            android:src="@android:drawable/ic_input_add"/>
+
+    </LinearLayout>
+
+</LinearLayout>

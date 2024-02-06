@@ -1,0 +1,232 @@
+<resources>
+
+    <!--Variables que toca Cambiar-->
+    <string name="app_name">Sas</string>
+    <string name="app_version">Sas v:1.0.15</string>
+    <!--<string name="apikey_Google">AIzaSyAKmhx3NZpjCHbIBVOvy6OsQyX0rnWYYqQ</string>-->
+    <!--<string name="Google_Service">AIzaSyAKmhx3NZpjCHbIBVOvy6OsQyX0rnWYYqQ-AIzaSyDa241R-8DlZ0CeW-Z8zlRCyTV2awtAS-Q</string>-->
+    <!--<<string name="apikey_Google">AIzaSyDa241R-8DlZ0CeW-Z8zlRCyTV2awtAS-Q</string>-->     <!--ESTAS APIKEYS SON LAS DE STTC, SE USAN EN AUTOCOMPLETE PLACE-->
+    <string name="apikey_Google">AIzaSyAT1_rBhAVOX851KH99hsif_Ef0KB57abM</string> <!--APIKEY DEL NUEVO CORREO-->
+
+
+    <string name="facebook_app_id">1438080126290246</string>
+    <string name="fb_login_protocol_scheme">fb1438080126290246</string>
+
+    <!--action-->
+    <string name="successful">Operación Exitosa</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="yes">Si</string>
+    <string name="No">No</string>
+    <string name="textDefautl">Texto de prueba para las vistas</string>
+    <string name="permitGPS">Debe Aceptar permiso de ubicacion</string>
+    <string name="permitCALL">Debe Aceptar permiso de telefono</string>
+
+    <!--error-->
+    <string name="internetEA">Verifique su conexion a Internet</string>
+    <string name="internetES">Es posible que el conductor ya haya aceptado el servicio por favor comuniquese con la empresa</string>
+    <string name="returnE">No se puede cerrar la aplicacion (hay un servicio en curso)</string>
+    <string name="nameE">Nombre inválido</string>
+    <string name="lastnameE">Apellido inválido</string>
+    <string name="emailE">Correo electrónico inválido</string>
+    <string name="mobileE">Teléfono inválido</string>
+    <string name="passwordE">Contraseña inválida</string>
+    <string name="codeE">Codigo inválido</string>
+    <string name="dateEF">Ingrese una fecha valida: YYYY/MM</string>
+    <string name="internetE">Por favor verifique su conexion a Internet e intentelo de nuevo</string>
+    <string name="destinationE">Por favor seleccione un destino</string>
+    <string name="originM">Por favor ingrese nuevamente el origen</string>
+    <string name="destinationM">Por favor ingrese nuevamente el destino</string>
+    <string name="originP">Hay un inconveniente con la dirección de origen. Por favor seleccione una dirección cercana.</string>
+    <string name="destinationP">Hay un inconveniente con la dirección de destino. Por favor seleccione una dirección cercana.</string>
+    <string name="retryE">Por favor ingrese nuevamente su origen y destino.</string>
+    <!--<string name="retryE">Por favor intentelo nuevamente</string>-->
+    <string name="advanceE">Realizar reserva con 5 minutos de antelacion</string>
+    <string name="dateE">Fecha invalida</string>
+    <string name="fieldsE">Debe seleccionar una imagen de Vehícuo</string>
+    <string name="qualifyE">Por favor adjuntar un comentario</string>
+    <string name="driverE">Conductor no asigndo</string>
+    <string name="requestE">No hay vehículos disponibles en este momento</string>
+    <string name="gpsE">Por favor activar la conexion GPS</string>
+    <string name="qualificationE">No hay conductores con esta calificacion en este momento</string>
+    <string name="cancelE">No es posible cancelar el servicio</string>
+    <string name="historialE">El usuario no tiene servicios</string>
+    <string name="reservasE">El usuario no tiene reservas</string>
+    <string name="pqrsE">El usuario no tiene pqrs</string>
+
+    <!--login-->
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="sign_in">Ingresar</string>
+    <string name="recover"><u>Recuperar contraseña</u></string>
+    <string name="infol">¿No tiene cuenta?</string>
+    <string name="register"><u>REGÍSTRESE</u></string>
+
+    <!--register-->
+    <string name="name">Nombre</string>
+    <string name="lastname">Apellido</string>
+    <string name="mobile">Móvil</string>
+    <string name="vali">Digite el código que se observa</string>
+    <string name="toregister">Registrar</string>
+    <string name="terms">Al registrarse acepta los términos de uso</string>
+    <string name="linkRegister">Un link será enviado a tu correo proporcionado. Por favor acceda al link para continuar el proceso de registro.</string>
+    <string name="successreg">Registro exitoso</string>
+    <string name="valierror">El código de validación no coincide</string>
+
+    <!--recover-->
+    <string name="recoverT">Recuperar contraseña</string>
+    <string name="infor">Escriba su correo para recibir el código de recuperación</string>
+    <string name="getcode">Obtener Código</string>
+
+    <!--newpassword-->
+    <string name="newpassword">Nueva Contraseña</string>
+    <string name="infon">Ingrese el código de recuperación y confirme su nueva contraseña</string>
+    <string name="code">Código de recuperación</string>
+    <string name="repeatpassword">Repetir nueva contraseña</string>
+    <string name="confirm">Confirmar Cambio</string>
+
+    <!--navigation-->
+    <string name="schedule">Agendar</string>
+    <string name="history">Historial</string>
+    <string name="travel">VIAJAR</string>
+    <string name="favorites">Favoritos</string>
+    <string name="profile">Perfil</string>
+    <string name="message">Mensaje</string>
+    <string name="call">LLamar</string>
+    <string name="share">Compartir</string>
+
+    <!--favorite-->
+    <string name="searchf">Click para buscar lugar</string>
+    <string name="addfav">Agregar a Favorito</string>
+
+    <!--map-->
+    <string name="destination">Destino</string>
+    <string name="source">Origen</string>
+    <string name="cancelS">CANCELAR SERVICIO</string>
+    <string name="pago">Pago ejecutado.</string>
+    <string name="pagofin">Se a iniciado el servicio</string>
+    <string-array name="cancel">
+        <item>No necesito el servicio</item>
+        <item>El conductor se demora</item>
+        <item>Tiempo estimado muy alto</item>
+    </string-array>
+
+    <!--request Service-->
+    <string name="travelT">Viajar Ahora</string>
+    <string name="vehiclesT">SELECCIONE VEHÍCULO</string>
+    <string name="modelT">MODELO VEHÍCULO</string>
+    <string name="qualificationT">CONDUCTOR</string>
+    <string name="afeDefault">ABA-CEBU-0003/CWO</string>
+    <string name="payingT">FORMA DE PAGO</string>
+    <string name="timerT">HORAS</string>
+    <string name="rateT">TARIFA</string>
+    <string name="detail"><u>ver detalle</u></string>
+    <string name="business">Cuenta\nEmpresa</string>
+    <string name="digital">Cuenta\nDigital</string>
+    <string name="credit">Tarjeta\nCrédito</string>
+    <string name="businessp">Cuenta Empresa</string>
+    <string name="digitalp">Cuenta Digital</string>
+    <string name="creditp">Tarjeta Crédito</string>
+    <string name="cash">Efectivo</string>
+    <string name="formaDePago">Seleccione una forma de pago</string>
+    <string name="insufficient">Saldo Insuficiente</string>
+    <string name="addinfo">Información Adicional</string>
+    <string name="addinfo2">Para prestarte un mejor servicio, agrega detalles del tipo de vehículo a recoger, indicaciones de la dirección y otra información para facilitar el servicio:</string>
+    <string-array name="models">
+        <item>2010</item>
+    </string-array>
+
+    <!--schedule-->
+    <string name="scheduleT">Agendar Viaje</string>
+    <string name="datetimer">FECHA Y HORA DEL VIAJE</string>
+    <string name="date">Fecha</string>
+    <string name="hour">Hora </string>
+    <string name="day">Día completo</string>
+    <string name="incoming">Siguiente</string>
+
+    <!--search-->
+    <string name="search">Estamos buscando vehículo...</string>
+    <string name="finSearch">No se encontro vehículos disponibles en tu zona</string>
+    <string name="hightime">TEMP_ALTO</string>
+
+    <!--Qualify-->
+    <string name="qualifyT">Por Favor Calificar Al Conductor</string>
+    <string name="qualify">Calificar</string>
+    <string name="commentsT">Comentarios adicionales</string>
+    <string name="comments">Escribe tu comentario</string>
+
+    <!--ProfileView-->
+    <string name="dateperson">Datos personales</string>
+    <string name="paymentmethods">Formas de pago</string>
+    <string name="reservations">Mis reservas</string>
+    <string name="promotions">Promociones</string>
+    <string name="help">Contacto y PQRS</string>
+    <string name="signoff">Cerrar sesión</string>
+    <string name="balance">Su saldo actual es</string>
+    <string name="newcard">Agregar una nueva tarjeta de crédito</string>
+    <string name="editpassword">Cambiar contraseña</string>
+    <string name="promoadd">Ingrese el codigo</string>
+    <string name="codepassw">Por favor ingrese el codigo que ha sido enviado al correo</string>
+
+    <!--Chat-->
+    <string name="chat">Chat</string>
+    <string name="send">Enviar</string>
+    <string name="men1">Estoy saliendo</string>
+    <string name="men2">Salgo en 5</string>
+    <string name="men3">Estoy Afuera</string>
+
+    <!--AddCard-->
+    <string name="addcard">Agregar Tarjeta</string>
+    <string name="nameC">Nombre Del Titular</string>
+    <string name="codeC">Código de seguridad</string>
+    <string name="dateC">YYYY/MM</string>
+    <string name="numberC">Número de tarjeta</string>
+
+    <!--items-->
+    <string name="idservice">#Servicio  </string>
+    <string name="idservc">#Serv.</string>
+    <string name="pending">Pendiente</string>
+    <string name="type1">Agendado</string>
+    <string name="type2">Ocacional</string>
+
+    <!--pqrs-->
+    <string name="pqrs">Contacto y PQRS</string>
+    <string name="pqrstxt">Para ponerse en contacto o enviar una PQRS (pregunta, queja, reclamo o sugerencia) escríbelo a en el cajón:</string>
+    <string name="pqrsmen">Escribe tu mensaje</string>
+    <string name="listview">ver historial</string>
+    <string-array name="typepqr">
+        <item>Tipo</item>
+        <item>SUGERENCIA</item>
+        <item>QUEJA</item>
+    </string-array>
+    <string-array name="typepqrf">
+        <item>Tipo</item>
+        <item>SUGERENCIA</item>
+    </string-array>
+    <string-array name="reasonpqr">
+        <item>Razon</item>
+        <item>SERVICIO</item>
+        <item>CONDUCTOR</item>
+    </string-array>
+
+    <!--Title-->
+    <string name="arrivedt">Conductor Asignado</string>
+    <string name="initiatet">Conductor Esperando</string>
+    <string name="finisht">En Trayecto</string>
+
+    <!--pay-->
+    <string name="pay">Formas De Pago</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_test">TestActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

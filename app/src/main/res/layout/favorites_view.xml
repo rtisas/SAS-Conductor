@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.rti.sas.view.FavoritesView">
+
+    <androidx.appcompat.widget.Toolbar
+        style="@style/ToolBar"
+        android:weightSum="1">
+        <TextView
+            style="@style/Title"
+            android:text="@string/favorites" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        style="@style/Content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Text"
+            android:id="@+id/searchfav"
+            android:layout_margin="@dimen/marginbig"
+            android:padding="@dimen/marginsmall"
+            android:text="@string/searchf"
+            android:background="@drawable/button1"/>
+
+        <ListView
+            style="@style/Content"
+            android:id="@+id/listfav">
+
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

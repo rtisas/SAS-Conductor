@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.rti.sas.view.RequestServiceView">
+
+    <androidx.appcompat.widget.Toolbar
+        style="@style/ToolBar"
+        android:weightSum="1">
+        <TextView
+            style="@style/Title"
+            android:id="@+id/title"
+            android:text="@string/sign_in" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/view"
+        style="@style/Content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/content"
+            style="@style/Text"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/marginsmall"
+            android:paddingEnd="@dimen/marginbig"
+            android:paddingStart="@dimen/marginbig">
+
+            <TextView
+                android:id="@+id/source"
+                style="@style/Text1"
+                android:drawableStart="@drawable/sources"
+                android:maxLines="1"
+                android:text="@string/textDefautl" />
+
+            <TextView
+                android:id="@+id/destination"
+                style="@style/Text1"
+                android:drawableStart="@drawable/destination"
+                android:maxLines="1"
+                android:text="@string/textDefautl" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginStart="@dimen/margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/Content1"
+                android:layout_weight="0.9"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    style="@style/Content1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/marginmedium">
+
+                    <ImageView
+                        android:id="@+id/vehicleleft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/left" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/vehiclelist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+
+                    <ImageView
+                        android:id="@+id/vehicleright"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/right" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/colorPrimaryText"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/optional"
+                style="@style/Content1"
+                android:layout_height="1dp"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Text3"
+                        android:text="MODELO" />
+
+                    <LinearLayout
+                        style="@style/Content1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/model"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Content1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/Content1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RatingBar
+                            android:id="@+id/qualification"
+                            style="@style/Base.Widget.AppCompat.RatingBar.Indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:isIndicator="false"
+                            android:progressTint="@color/colorPrimary"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/colorPrimaryText"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                style="@style/Content1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Text3"
+                    android:text="@string/payingT" />
+
+                <LinearLayout
+                    style="@style/Content1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/creditbutton"
+                        style="@style/Content1"
+                        android:layout_marginEnd="@dimen/marginmedium"
+                        android:layout_marginStart="@dimen/margin"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/creditI"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/credit" />
+
+                        <TextView
+                            android:id="@+id/creditT"
+                            style="@style/Text"
+                            android:lines="2"
+                            android:text="@string/credit"
+                            android:textSize="@dimen/textbig" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/businessbutton"
+                        style="@style/Content1"
+                        android:layout_marginEnd="@dimen/marginmedium"
+                        android:layout_marginStart="@dimen/marginmedium"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/businessI"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/business" />
+
+                        <TextView
+                            android:id="@+id/businessT"
+                            style="@style/Text"
+                            android:lines="2"
+                            android:text="@string/business"
+                            android:textSize="@dimen/textbig" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Content1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/digitalbutton"
+                        style="@style/Content1"
+                        android:layout_marginEnd="@dimen/marginmedium"
+                        android:layout_marginStart="@dimen/marginmedium"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/digitalI"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/digital" />
+
+                        <TextView
+                            android:id="@+id/digitalT"
+                            style="@style/Text"
+                            android:lines="2"
+                            android:text="@string/digital"
+                            android:textSize="@dimen/textbig" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cashbutton"
+                        style="@style/Content1"
+                        android:layout_marginEnd="@dimen/margin"
+                        android:layout_marginStart="@dimen/marginmedium"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/cashI"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/cash" />
+
+                        <TextView
+                            android:id="@+id/cashT"
+                            style="@style/Text"
+                            android:lines="2"
+                            android:text="@string/cash"
+                            android:textSize="@dimen/textbig" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/colorPrimaryText"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                style="@style/Content1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/hourcontent"
+                    style="@style/Content1"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/Text3"
+                        android:text="@string/timerT" />
+
+                    <LinearLayout
+                        style="@style/Content1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/hours"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Content1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/Text3"
+                        android:text="@string/rateT" />
+
+                    <LinearLayout
+                        style="@style/Content1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/rate"
+                            style="@style/Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:layout_marginEnd="@dimen/marginmedium"/>
+
+                        <TextView
+                            android:id="@+id/detail"
+                            style="@style/TextLink"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/detail"
+                            android:textSize="@dimen/textMsmall" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Text"
+                android:orientation="horizontal">
+
+                <FrameLayout style="@style/Margin"></FrameLayout>
+
+                <LinearLayout
+                    style="@style/Content"
+                    android:layout_marginBottom="@dimen/marginbig"
+                    android:layout_marginTop="@dimen/marginbig">
+
+                    <TextView
+                        android:id="@+id/requestbutton"
+                        style="@style/TextButton"
+                        android:background="@drawable/button"
+                        android:text="@string/sign_in" />
+                </LinearLayout>
+
+                <FrameLayout style="@style/Margin"></FrameLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Content"
+        android:id="@+id/card"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/marginbig"
+        android:padding="@dimen/marginbig"
+        android:visibility="gone">
+
+        <ListView
+            style="@style/Content"
+            android:id="@+id/history">
+
+        </ListView>
+
+        <!--<TextView
+            style="@style/Text"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/newcard"/>
+        <ImageView
+            style="@style/Text"
+            android:id="@+id/addcard"
+            android:src="@android:drawable/ic_input_add"/>-->
+
+    </LinearLayout>
+
+</LinearLayout>

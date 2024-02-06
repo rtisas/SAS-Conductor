@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.rti.sas.view.MapView">
+
+    <androidx.appcompat.widget.Toolbar
+        style="@style/ToolBar"
+        android:weightSum="1">
+        <TextView
+            style="@style/Title"
+            android:text="@string/addcard"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        style="@style/Content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginbig"
+        android:orientation="vertical">
+
+        <morxander.editcard.EditCard
+            style="@style/TextEdit"
+            android:id="@+id/number"
+            android:hint="@string/numberC"
+            android:gravity="center_vertical"
+            android:layout_margin="@dimen/marginsmall"/>
+
+        <EditText
+            style="@style/TextEdit"
+            android:id="@+id/date"
+            android:hint="@string/dateC"
+            android:gravity="center_vertical"
+            android:layout_margin="@dimen/marginsmall"
+            android:inputType="date"
+            android:drawableStart="@drawable/credit"/>
+
+        <EditText
+            style="@style/TextEdit"
+            android:id="@+id/code"
+            android:hint="@string/codeC"
+            android:gravity="center_vertical"
+            android:layout_margin="@dimen/marginsmall"
+            android:maxLength="4"
+            android:inputType="number"
+            android:drawableStart="@drawable/credit"/>
+
+        <EditText
+            style="@style/TextEdit"
+            android:id="@+id/name"
+            android:hint="@string/nameC"
+            android:gravity="center_vertical"
+            android:inputType="textPersonName"
+            android:maxLength="@integer/ta"
+            android:layout_margin="@dimen/marginsmall"
+            android:drawableStart="@drawable/credit"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/Margin"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            style="@style/Text"
+            android:orientation="horizontal">
+
+            <FrameLayout style="@style/Margin" />
+
+            <LinearLayout
+                style="@style/Content"
+                android:layout_marginTop="@dimen/marginbig"
+                android:layout_marginBottom="@dimen/marginbig">
+                <TextView
+                    style="@style/TextButton"
+                    android:id="@+id/requestbutton"
+                    android:text="@string/toregister"
+                    android:background="@drawable/button"/>
+            </LinearLayout>
+
+            <FrameLayout style="@style/Margin" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

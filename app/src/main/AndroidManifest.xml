@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:debuggable="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="HardcodedDebugMode">
+        <activity
+            android:name=".TestActivity"
+            android:exported="false"
+            android:label="@string/title_activity_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/apikey_Google" />
+
+        <receiver
+            android:name="com.rti.sas.broadcast.ConnectivityReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <service
+            android:name="com.rti.sas.service.CloudMessaging"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".view.SplashView"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.MapView"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.LoginView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.RegisterView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.RecoverView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.NewPasswordView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.FavoritesView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.RequestServiceView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.ScheduleView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.SearchView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.QualifyView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.AddCardView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.PqrsView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.HistoryView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.UserView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.PayView"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

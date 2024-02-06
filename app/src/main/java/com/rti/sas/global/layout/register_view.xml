@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".view.LoginView">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ToolBar">
+        <TextView
+            style="@style/Title"
+            android:text="@string/toregister"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        style="@style/Content"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/Logo"
+            android:src="@drawable/logo"/>
+
+        <LinearLayout
+            style="@style/Content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                style="@style/Margin"></FrameLayout>
+
+            <LinearLayout
+                style="@style/Content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    style="@style/Margin"
+                    android:layout_weight="1.1"/>
+
+                <EditText
+                    style="@style/TextEdit"
+                    android:id="@+id/name"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName"
+                    android:drawableStart="@drawable/user" />
+
+                <EditText
+                    style="@style/TextEdit"
+                    android:id="@+id/lastname"
+                    android:hint="@string/lastname"
+                    android:inputType="textPersonName"
+                    android:drawableStart="@drawable/perfil" />
+
+                <EditText
+                    style="@style/TextEdit"
+                    android:id="@+id/email"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:drawableStart="@drawable/email" />
+
+                <EditText
+                    style="@style/TextEdit"
+                    android:id="@+id/mobile"
+                    android:hint="@string/mobile"
+                    android:inputType="phone"
+                    android:drawableStart="@drawable/mobile" />
+
+                <EditText
+                    style="@style/TextEdit"
+                    android:id="@+id/password"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:drawableStart="@drawable/password" />
+
+                <RelativeLayout
+                    style="@style/Margin"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/TextButton"
+                        android:id="@+id/toregister"
+                        android:text="@string/toregister"
+                        android:background="@drawable/button"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/Margin"
+                    android:layout_weight="1.1">
+
+                    <TextView
+                        style="@style/TextLink"
+                        android:id="@+id/terms"
+                        android:text="@string/terms"
+                        android:textSize="@dimen/textsmall"/>
+
+                </RelativeLayout>
+
+
+                <FrameLayout
+                    style="@style/Margin"
+                    android:layout_weight="1.15"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                style="@style/Margin"></FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

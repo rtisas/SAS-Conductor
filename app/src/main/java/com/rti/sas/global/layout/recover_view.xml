@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".view.LoginView">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ToolBar">
+        <TextView
+            style="@style/Title"
+            android:text="@string/recoverT"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        style="@style/Content"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/Logo"
+            android:src="@drawable/logo"/>
+
+        <LinearLayout
+            style="@style/Content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                style="@style/Margin"></FrameLayout>
+
+            <LinearLayout
+                style="@style/Content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    style="@style/Margin"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/Text"
+                        android:text="@string/infor"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    style="@style/Margin"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <EditText
+                        style="@style/TextEdit"
+                        android:visibility="invisible"/>
+
+                    <EditText
+                        style="@style/TextEdit"
+                        android:id="@+id/email"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:drawableStart="@drawable/email" />
+
+                    <EditText
+                        style="@style/TextEdit"
+                        android:visibility="invisible"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    style="@style/Margin"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/TextButton"
+                        android:id="@+id/getcode"
+                        android:text="@string/getcode"
+                        android:background="@drawable/button"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                style="@style/Margin"></FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

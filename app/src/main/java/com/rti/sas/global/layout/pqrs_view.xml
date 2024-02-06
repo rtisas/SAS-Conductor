@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".view.PqrsView">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ToolBar"
+        android:weightSum="1">
+        <TextView
+            style="@style/Title"
+            android:text="@string/pqrs" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        style="@style/Content"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/Logo"
+            android:src="@drawable/logo"/>
+
+        <LinearLayout
+            style="@style/Content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                style="@style/Margin"></FrameLayout>
+
+            <LinearLayout
+                style="@style/Content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    style="@style/Text"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/pqrstxt"/>
+
+
+                <EditText
+                    style="@style/TextEdit"
+                    android:id="@+id/men"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pqrsmen"
+                    android:lines="4"
+                    android:background="@drawable/button1"/>
+
+                <LinearLayout
+                    style="@style/Content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        style="@style/Text"
+                        android:id="@+id/type"
+                        android:layout_weight="1"
+                        android:entries="@array/typepqr">
+
+                    </Spinner>
+                    <Spinner
+                        style="@style/Text"
+                        android:id="@+id/reason"
+                        android:layout_weight="1"
+                        android:entries="@array/reasonpqr">
+
+                    </Spinner>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/TextLink"
+                    android:id="@+id/listbutton"
+                    android:text="@string/listview"/>
+
+                <RelativeLayout
+                    style="@style/Content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/TextButton"
+                        android:id="@+id/send"
+                        android:text="@string/send"
+                        android:background="@drawable/button"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                style="@style/Margin"></FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listpqr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.rti.sas.view.ScheduleView">
+
+    <androidx.appcompat.widget.Toolbar
+        style="@style/ToolBar"
+        android:weightSum="1">
+        <TextView
+            style="@style/Title"
+            android:id="@+id/title"
+            android:text="@string/scheduleT" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/content"
+        style="@style/Text"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/marginsmall"
+        android:paddingEnd="@dimen/marginbig"
+        android:paddingStart="@dimen/marginbig">
+
+
+        <TextView
+            android:id="@+id/source"
+            style="@style/Text1"
+            android:maxLines="1"
+            android:text="@string/textDefautl"
+            android:drawableStart="@drawable/sources"/>
+
+
+        <TextView
+            android:id="@+id/destination"
+            style="@style/Text1"
+            android:maxLines="1"
+            android:text="@string/textDefautl"
+            android:drawableStart="@drawable/destination"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Content1"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/marginbig">
+
+        <LinearLayout
+            style="@style/Content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text3"
+                android:layout_weight="4"
+                android:text="@string/datetimer"/>
+
+            <LinearLayout
+                style="@style/Content1"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/Text"
+                    android:layout_width="wrap_content"
+                    android:text="@string/date"
+                    android:drawableStart="@drawable/hour"/>
+
+                <EditText
+                    style="@style/TextEdit"
+                    android:id="@+id/date"
+                    android:editable="false"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Content1"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/Text"
+                    android:layout_width="wrap_content"
+                    android:text="@string/hour"
+                    android:drawableStart="@drawable/date"/>
+
+                <EditText
+                    style="@style/TextEdit"
+                    android:id="@+id/hour"
+                    android:editable="false"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                style="@style/Content1"
+                android:layout_weight="8">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Text"
+        android:orientation="horizontal">
+        <FrameLayout
+            style="@style/Margin"></FrameLayout>
+
+        <LinearLayout
+            style="@style/Content"
+            android:layout_marginTop="@dimen/marginbig"
+            android:layout_marginBottom="@dimen/marginbig">
+            <TextView
+                style="@style/TextButton"
+                android:id="@+id/schedulebutton"
+                android:text="@string/sign_in"
+                android:background="@drawable/button"/>
+        </LinearLayout>
+
+        <FrameLayout
+            style="@style/Margin"></FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/received"
+        android:layout_width="@dimen/sizebar"
+        android:layout_height="@dimen/sizebar"
+        android:layout_margin="@dimen/margin"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/user"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Text"
+            android:id="@+id/text"
+            android:paddingStart="@dimen/marginbig"
+            android:paddingEnd="@dimen/marginbig"
+            android:textSize="@dimen/text"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:text="@string/textDefautl"/>
+
+        <TextView
+            style="@style/Text"
+            android:id="@+id/date"
+            android:paddingStart="@dimen/marginbig"
+            android:paddingEnd="@dimen/marginbig"
+            android:paddingBottom="@dimen/marginmedium"
+            android:textSize="@dimen/textsmall"
+            android:gravity="start"
+            android:text="@string/textDefautl"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/sent"
+        android:layout_width="@dimen/sizebar"
+        android:layout_height="@dimen/sizebar"
+        android:layout_margin="@dimen/margin"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/user"/>
+
+</LinearLayout>

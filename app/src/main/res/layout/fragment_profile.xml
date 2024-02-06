@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.rti.sas.fragment.ProfileF">
+
+    <LinearLayout
+        style="@style/Content"
+        android:id="@+id/menu"
+        android:orientation="vertical"
+        android:padding="@dimen/marginbig"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/Text"
+            android:id="@+id/person"
+            android:editable="false"
+            android:hint="@string/dateperson"
+            android:gravity="start|center"
+            android:layout_margin="@dimen/margin"
+            android:drawableStart="@drawable/user"
+            android:background="@drawable/separator"/>
+        <TextView
+            style="@style/Text"
+            android:id="@+id/pay"
+            android:editable="false"
+            android:hint="@string/paymentmethods"
+            android:gravity="start|center"
+            android:layout_margin="@dimen/margin"
+            android:drawableStart="@drawable/payment"
+            android:background="@drawable/separator"/>
+        <TextView
+            style="@style/Text"
+            android:id="@+id/travel"
+            android:editable="false"
+            android:hint="@string/reservations"
+            android:gravity="start|center"
+            android:layout_margin="@dimen/margin"
+            android:drawableStart="@drawable/reservations"
+            android:background="@drawable/separator"/>
+        <TextView
+            style="@style/Text"
+            android:id="@+id/promo"
+            android:editable="false"
+            android:hint="@string/promotions"
+            android:gravity="start|center"
+            android:layout_margin="@dimen/margin"
+            android:drawableStart="@drawable/promotions"
+            android:background="@drawable/separator"/>
+        <TextView
+            style="@style/Text"
+            android:id="@+id/pqrs"
+            android:editable="false"
+            android:hint="@string/help"
+            android:gravity="start|center"
+            android:layout_margin="@dimen/margin"
+            android:drawableStart="@drawable/password"
+            android:background="@drawable/separator"/>
+        <TextView
+            style="@style/Text"
+            android:id="@+id/singoff"
+            android:editable="false"
+            android:hint="@string/signoff"
+            android:gravity="start|center"
+            android:layout_margin="@dimen/margin"
+            android:drawableStart="@drawable/signoff"
+            android:background="@drawable/separator"/>
+
+    </LinearLayout>
+
+</LinearLayout>

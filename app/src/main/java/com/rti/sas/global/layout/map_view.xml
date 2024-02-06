@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".view.MapView">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ToolBar"
+        android:weightSum="1">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/marginbig">
+
+            <TextView
+                style="@style/Title"
+                android:id="@+id/title"
+                android:text="@string/app_name"/>
+
+            <ImageView
+                android:id="@+id/waze"
+                android:layout_width="@dimen/sizebar"
+                android:layout_height="@dimen/sizebar"
+                android:padding="@dimen/marginmedium"
+                android:src="@mipmap/ic_waze"
+                android:layout_gravity="end"/>
+
+            <ImageView
+                android:id="@+id/info"
+                android:layout_width="@dimen/sizebar"
+                android:layout_height="@dimen/sizebar"
+                android:padding="@dimen/marginmedium"
+                android:src="@drawable/help"
+                android:layout_gravity="start"/>
+
+        </FrameLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        style="@style/Text"
+        android:id="@+id/content"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/margin"
+        android:paddingStart="@dimen/margin"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            style="@style/Text2"
+            android:id="@+id/source"
+            android:text="@string/source"
+            android:maxLines="1"
+            android:drawableStart="@drawable/sources"/>
+
+        <TextView
+            style="@style/Text2"
+            android:id="@+id/destination"
+            android:text="@string/destination"
+            android:layout_marginTop="@dimen/margin"
+            android:maxLines="1"
+            android:drawableStart="@drawable/destination"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        style="@style/Content1">
+
+        <fragment
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            style="@style/Content"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            map:uiCompass="true"/>
+
+        <LinearLayout
+            style="@style/Content"
+            android:id="@+id/fragment"
+            android:orientation="vertical"
+            android:background="@color/colorWhite">
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Content"
+            android:id="@+id/content1"
+            android:orientation="vertical"
+            android:padding="@dimen/marginbig"
+            android:background="@color/colorWhite"
+            android:visibility="visible">
+
+            <ListView
+                style="@style/Content"
+                android:id="@+id/history">
+
+            </ListView>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/infotravel"
+        style="@style/Text"
+        android:orientation="horizontal">
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/infouser"
+        style="@style/Content1"
+        android:layout_weight="0"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/photo"
+                android:layout_width="@dimen/photo"
+                android:layout_height="@dimen/photo"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/marginmedium"
+                android:src="@drawable/perfil" />
+
+            <RatingBar
+                style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                android:id="@+id/qualification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginsmall"
+                android:layout_gravity="center"
+                android:progressTint="@color/colorWhite"
+                android:rating="5"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:padding="@dimen/margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Text5"
+                        android:id="@+id/row0"
+                        android:maxLines="1"
+                        android:text="@string/app_name"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Text5"
+                            android:id="@+id/row1"
+                            android:maxLines="1"
+                            android:gravity="start"
+                            android:text="@string/app_name"/>
+
+                        <TextView
+                            style="@style/Text5"
+                            android:id="@+id/row3"
+                            android:maxLines="1"
+                            android:gravity="start"
+                            android:text="@string/app_name"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        style="@style/Text5"
+                        android:id="@+id/row2"
+                        android:maxLines="1"
+                        android:text="@string/app_name"/>
+
+                    <TextView
+                        style="@style/Text5"
+                        android:id="@+id/row4"
+                        android:maxLines="1"
+                        android:text="@string/app_name"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/mins"
+                        style="@style/Text5"
+                        android:drawableTop="@drawable/timer"
+                        android:text="@string/hour" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom" />
+</LinearLayout>

@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+    }
+}
+android {
+    useLibrary 'android.test.runner'
+    useLibrary 'android.test.base'
+    useLibrary 'android.test.mock'
+    signingConfigs {
+        config {
+            keyAlias 'RtiSasLlaves'
+            keyPassword 'PP4S4S1tR'
+            storeFile file('/Users/rtidev/OneDrive/Documentos/Rti/FabricaSw/Llaves/Android.jks')
+            storePassword 'Rt1S4S4pp'
+        }
+    }
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId 'com.rti.sas'
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 15
+        versionName '1.0.15'
+        multiDexEnabled true
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        signingConfig signingConfigs.config
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    namespace 'com.rti.sas'
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.navigation:navigation-fragment:2.5.0'
+    implementation 'androidx.navigation:navigation-ui:2.5.0'
+    implementation 'org.chromium.net:cronet-embedded:101.4951.41'
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.2.0', {
+        exclude group: 'com.androidx.support', module: 'support-annotations'
+    })
+    implementation 'com.facebook.android:facebook-login:4.42.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.maps.android:android-maps-utils:2.0.3'
+    implementation 'com.google.firebase:firebase-core:17.5.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.6'
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+    implementation 'com.google.android.libraries.places:places-compat:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.14.9'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.aurelhubert:ahbottomnavigation:2.0.6'
+    implementation 'com.github.eralpyucel:CircleProgressView:v1.1'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'morxander.editcard:EditCard:1.0.1'
+    implementation 'org.greenrobot:eventbus:3.2.0'
+    testImplementation 'junit:junit:4.12'
+}
+apply plugin: 'com.google.gms.google-services'
+

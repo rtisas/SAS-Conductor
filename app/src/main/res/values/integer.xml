@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--tamaños del texto-->
+    <integer name="ta">45</integer>
+    <integer name="tb">60</integer>
+    <integer name="taa">140</integer>
+    <integer name="tc">175</integer>
+    <integer name="td">250</integer>
+    <integer name="te">1000</integer>
+    <integer name="timer">5</integer>
+    <integer name="minimumCalification">3</integer>
+</resources>

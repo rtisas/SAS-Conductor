@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".view.HistoryView">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ToolBar"
+        android:weightSum="1">
+        <TextView
+            style="@style/Title"
+            android:id="@+id/title"
+            android:text="@string/pay"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        style="@style/Content"
+        android:id="@+id/item2"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/marginbig"
+        android:padding="@dimen/marginbig"
+        android:visibility="visible">
+
+        <TextView
+            style="@style/Text"
+            android:id="@+id/credit"
+            android:editable="false"
+            android:hint="@string/creditp"
+            android:gravity="start|center"
+            android:layout_margin="@dimen/margin"
+            android:drawableStart="@drawable/credit"
+            android:background="@drawable/separator"/>
+        <TextView
+            style="@style/Text"
+            android:id="@+id/business"
+            android:editable="false"
+            android:hint="@string/businessp"
+            android:gravity="start|center"
+            android:layout_margin="@dimen/margin"
+            android:drawableStart="@drawable/business"
+            android:background="@drawable/separator"/>
+        <TextView
+            style="@style/Text"
+            android:id="@+id/digital"
+            android:editable="false"
+            android:hint="@string/digitalp"
+            android:gravity="start|center"
+            android:layout_margin="@dimen/margin"
+            android:drawableStart="@drawable/digital"
+            android:background="@drawable/separator"/>
+        <TextView
+            style="@style/Text"
+            android:id="@+id/cash"
+            android:editable="false"
+            android:hint="@string/cash"
+            android:gravity="start|center"
+            android:layout_margin="@dimen/margin"
+            android:drawableStart="@drawable/cash"
+            android:background="@drawable/separator"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sizebar">45dp</dimen>
+    <dimen name="textsmall">10sp</dimen>
+    <dimen name="textMsmall">12sp</dimen>
+    <dimen name="textMbig">22sp</dimen>
+    <dimen name="textMMMbig">30sp</dimen>
+    <dimen name="textbig">18sp</dimen>
+    <dimen name="text">14sp</dimen>
+    <dimen name="marginmedium">5dp</dimen>
+    <dimen name="marginsmall">2dp</dimen>
+    <dimen name="marginbig">15dp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="photo">55dp</dimen>
+    <dimen name="line">1dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

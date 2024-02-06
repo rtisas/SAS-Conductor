@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".view.ScheduleView">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ToolBar"
+        android:weightSum="1">
+        <TextView
+            style="@style/Title"
+            android:id="@+id/title"
+            android:text="@string/scheduleT" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        style="@style/Text"
+        android:id="@+id/content"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/marginbig"
+        android:paddingStart="@dimen/marginbig"
+        android:paddingBottom="@dimen/marginsmall"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            style="@style/Text1"
+            android:text="@string/source"
+            android:textStyle="bold"/>
+        <TextView
+            style="@style/Text1"
+            android:maxLines="1"
+            android:id="@+id/source"
+            android:text="@string/textDefautl"/>
+
+        <TextView
+            style="@style/Text1"
+            android:text="@string/destination"
+            android:layout_marginTop="@dimen/marginsmall"
+            android:textStyle="bold" />
+        <TextView
+            style="@style/Text1"
+            android:maxLines="1"
+            android:id="@+id/destination"
+            android:text="@string/textDefautl" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Content1"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/marginbig">
+
+        <LinearLayout
+            style="@style/Content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text3"
+                android:layout_weight="4"
+                android:text="@string/datetimer"/>
+
+            <LinearLayout
+                style="@style/Content1"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/Text"
+                    android:layout_width="wrap_content"
+                    android:text="@string/date"
+                    android:drawableStart="@drawable/date"/>
+
+                <EditText
+                    style="@style/TextEdit"
+                    android:id="@+id/date"
+                    android:editable="false"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Content1"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/Text"
+                    android:layout_width="wrap_content"
+                    android:text="@string/hour"
+                    android:drawableStart="@drawable/hour"/>
+
+                <EditText
+                    style="@style/TextEdit"
+                    android:id="@+id/hour"
+                    android:editable="false"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                style="@style/Content1"
+                android:layout_weight="8">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Text"
+        android:orientation="horizontal">
+        <FrameLayout
+            style="@style/Margin"></FrameLayout>
+
+        <LinearLayout
+            style="@style/Content"
+            android:layout_marginTop="@dimen/marginbig"
+            android:layout_marginBottom="@dimen/marginbig">
+            <TextView
+                style="@style/TextButton"
+                android:id="@+id/schedulebutton"
+                android:text="@string/sign_in"
+                android:background="@drawable/button"/>
+        </LinearLayout>
+
+        <FrameLayout
+            style="@style/Margin"></FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

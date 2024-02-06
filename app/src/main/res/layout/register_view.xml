@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.rti.sas.view.LoginView">
+
+    <androidx.appcompat.widget.Toolbar
+        style="@style/ToolBar">
+        <TextView
+            style="@style/Title"
+            android:text="@string/toregister"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        style="@style/Content"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/Logo"
+            android:src="@drawable/logo"/>
+
+        <LinearLayout
+            style="@style/Content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                style="@style/Margin"></FrameLayout>
+
+
+            <LinearLayout
+                style="@style/Content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    style="@style/Margin"
+                    android:layout_weight="1.1"/>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/facebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/marginsmall"
+                        android:layout_weight="1"
+                        android:visibility="gone"/>
+
+                    <com.google.android.gms.common.SignInButton
+                        android:id="@+id/google"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+
+                <EditText
+                    style="@style/TextEdit"
+                    android:id="@+id/name"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName"
+                    android:maxLength="@integer/ta"
+                    android:drawableStart="@drawable/user" />
+
+                <EditText
+                    style="@style/TextEdit"
+                    android:id="@+id/lastname"
+                    android:hint="@string/lastname"
+                    android:inputType="textPersonName"
+                    android:maxLength="@integer/ta"
+                    android:drawableStart="@drawable/user" />
+
+                <EditText
+                    style="@style/TextEdit"
+                    android:id="@+id/email"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="@integer/tb"
+                    android:drawableStart="@drawable/email" />
+
+                <EditText
+                    style="@style/TextEdit"
+                    android:id="@+id/mobile"
+                    android:hint="@string/mobile"
+                    android:inputType="phone"
+                    android:drawableStart="@drawable/mobile" />
+
+                <EditText
+                    style="@style/TextEdit"
+                    android:id="@+id/password"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:drawableStart="@drawable/password" />
+
+                <TextView
+                    android:id="@+id/imvalid"
+                    style="@style/Text"
+                    android:lines="1"
+                    android:text=""
+                    android:textSize="@dimen/textMMMbig"
+                    android:textColor="@color/colorRed"
+                    android:textStyle="italic|bold" />
+
+                <EditText
+                    style="@style/TextEdit"
+                    android:id="@+id/validator"
+                    android:hint="@string/vali"
+                    android:inputType="number"
+                    android:textAlignment="center"/>
+
+                <RelativeLayout
+                    style="@style/Margin"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/TextButton"
+                        android:id="@+id/toregister"
+                        android:text="@string/toregister"
+                        android:background="@drawable/button"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/Margin"
+                    android:layout_weight="1.1">
+
+                    <TextView
+                        style="@style/TextLink"
+                        android:id="@+id/terms"
+                        android:text="@string/terms"
+                        android:textSize="@dimen/textsmall"/>
+
+                </RelativeLayout>
+
+
+                <FrameLayout
+                    style="@style/Margin"
+                    android:layout_weight="1.15"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                style="@style/Margin"></FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

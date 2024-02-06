@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.rti.sas.view.UserView">
+
+    <androidx.appcompat.widget.Toolbar
+        style="@style/ToolBar"
+        android:weightSum="1">
+        <TextView
+            style="@style/Title"
+            android:id="@+id/title"
+            android:text="@string/dateperson"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        style="@style/Content"
+        android:id="@+id/item1"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/marginbig"
+        android:padding="@dimen/marginbig"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="@dimen/photo"
+            android:layout_height="@dimen/photo"
+            android:layout_gravity=""
+            android:src="@drawable/user"/>
+
+        <TextView
+            style="@style/Text"
+            android:id="@+id/name"
+            android:gravity="start|center"
+            android:text="@string/textDefautl"
+            android:layout_margin="@dimen/marginbig"
+            android:drawableStart="@drawable/user" />
+        <TextView
+            style="@style/Text"
+            android:id="@+id/email"
+            android:gravity="start|center"
+            android:text="@string/textDefautl"
+            android:layout_margin="@dimen/marginbig"
+            android:drawableStart="@drawable/email" />
+        <TextView
+            style="@style/Text"
+            android:id="@+id/mobile"
+            android:gravity="start|center"
+            android:text="@string/textDefautl"
+            android:layout_margin="@dimen/marginbig"
+            android:drawableStart="@drawable/mobile" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Text"
+                android:text="*******"
+                android:gravity="start|center"
+                android:layout_margin="@dimen/marginbig"
+                android:drawableStart="@drawable/password"/>
+
+            <TextView
+                style="@style/TextLink"
+                android:id="@+id/editpassword"
+                android:text="@string/editpassword"
+                android:layout_margin="@dimen/marginbig"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+
+    </style>
+
+    <style name="ToolBar">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/sizebar</item>
+    </style>
+
+    <style name="Logo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:padding">@dimen/marginbig</item>
+        <item name="android:layout_weight">10</item>
+    </style>
+
+    <style name="Content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">3</item>
+    </style>
+
+    <style name="Content1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Margin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">8.5</item>
+    </style>
+
+    <style name="Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorSecundaryText</item>
+        <item name="android:textSize">@dimen/textbig</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textColorHint">@color/colorPrimaryText</item>
+        <item name="android:textSize">@dimen/text</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Text1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:textColor">@color/colorSecundaryText</item>
+    </style>
+
+    <style name="Text2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text</item>
+        <item name="android:textColor">@color/colorSecundaryText</item>
+        <item name="android:layout_marginBottom">@dimen/margin</item>
+        <item name="android:layout_marginStart">@dimen/margin</item>
+        <item name="android:layout_marginEnd">@dimen/margin</item>
+        <item name="android:paddingBottom">@dimen/marginsmall</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:background">@drawable/edittext</item>
+    </style>
+
+    <style name="Text3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_margin">@dimen/marginmedium</item>
+    </style>
+
+    <style name="Text4">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="Text5">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text</item>
+        <item name="android:textColor">@color/colorSecundaryText</item>
+    </style>
+
+    <style name="TextEdit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">1</item>
+        <item name="android:paddingStart">@dimen/marginsmall</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textColorHint">@color/colorPrimaryText</item>
+        <item name="android:textSize">@dimen/text</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="TextButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorSecundaryText</item>
+        <item name="android:textSize">@dimen/textbig</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/marginmedium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextLink">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccentText</item>
+        <item name="android:textSize">@dimen/text</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Total">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
