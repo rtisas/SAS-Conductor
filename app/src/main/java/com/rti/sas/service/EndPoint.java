@@ -109,7 +109,7 @@ public interface EndPoint {
 
     @POST("/v1/code/redeem")
     Call<ResponseServer> promo(@Query("access_token")String token, @Body Request request);
-
+//test
     @POST("/v1/service/checkServiceStatus")
     Call<ResponseServer> state(@Query("access_token")String token, @Body Request request);
 
