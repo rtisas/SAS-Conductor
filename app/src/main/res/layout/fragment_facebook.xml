@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.rti.sas.fragment.Facebook">
+    tools:context="com.rtisas.sas.fragment.Facebook">
 
     <com.facebook.login.widget.LoginButton
         android:id="@+id/facebook"

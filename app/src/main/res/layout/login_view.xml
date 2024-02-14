@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
     android:orientation="vertical"
-    tools:context="com.rti.sas.view.LoginView">
+    tools:context="com.rtisas.sas.view.LoginView">
 
     <androidx.appcompat.widget.Toolbar
         style="@style/ToolBar"
@@ -76,14 +76,6 @@
 
                 </RelativeLayout>
 
-                <TextView
-                    style="@style/Text"
-                    android:text="@string/infol"/>
-
-                <TextView
-                    style="@style/TextLink"
-                    android:id="@+id/register"
-                    android:text="@string/register"/>
 
                 <FrameLayout
                     style="@style/Margin"

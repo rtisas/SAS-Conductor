@@ -20,11 +20,11 @@ android {
     }
     compileSdkVersion 33
     defaultConfig {
-        applicationId 'com.rti.sas'
+        applicationId 'com.rtisas.sas'
         minSdkVersion 21
         targetSdkVersion 33
-        versionCode 15
-        versionName '1.0.15'
+        versionCode 13
+        versionName '1.0.13'
         multiDexEnabled true
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
         signingConfig signingConfigs.config
@@ -32,9 +32,9 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled true
+            /* minifyEnabled true
             shrinkResources true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'*/
         }
     }
     productFlavors {
@@ -43,7 +43,7 @@ android {
         sourceCompatibility 1.8
         targetCompatibility 1.8
     }
-    namespace 'com.rti.sas'
+    namespace 'com.rtisas.sas'
     buildFeatures {
         viewBinding true
     }

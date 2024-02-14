@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
     android:orientation="vertical"
-    tools:context="com.rti.sas.view.PqrsView">
+    tools:context="com.rtisas.sas.view.PqrsView">
 
     <androidx.appcompat.widget.Toolbar
         style="@style/ToolBar"

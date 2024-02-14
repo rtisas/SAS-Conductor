@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
     android:orientation="vertical"
-    tools:context="com.rti.sas.view.UserView">
+    tools:context="com.rtisas.sas.view.UserView">
 
     <androidx.appcompat.widget.Toolbar
         style="@style/ToolBar"

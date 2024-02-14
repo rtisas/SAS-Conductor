@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:714688064271:android:7a118c0e1f3c0c4d076c7a",
         "android_client_info": {
-          "package_name": "com.rti.sas"
+          "package_name": "com.rtisas.sas"
         }
       },
       "oauth_client": [

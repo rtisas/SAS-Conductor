@@ -31,7 +31,7 @@
             android:value="@string/apikey_Google" />
 
         <receiver
-            android:name="com.rti.sas.broadcast.ConnectivityReceiver"
+            android:name="com.rtisas.sas.broadcast.ConnectivityReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -44,7 +44,7 @@
             android:value="@string/facebook_app_id" />
 
         <service
-            android:name="com.rti.sas.service.CloudMessaging"
+            android:name="com.rtisas.sas.service.CloudMessaging"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

@@ -7,7 +7,7 @@
     android:background="@color/colorPrimary"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.rti.sas.view.SearchView">
+    tools:context="com.rtisas.sas.view.SearchView">
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
     android:orientation="vertical"
-    tools:context="com.rti.sas.fragment.ProfileF">
+    tools:context="com.rtisas.sas.fragment.ProfileF">
 
     <LinearLayout
         style="@style/Content"
